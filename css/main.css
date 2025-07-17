@@ -352,3 +352,15 @@ template {
 body {
   font-family: "Gilroy", sans-serif;
 }
+
+.container {
+  max-width: 1760px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 1130px;
+  }
+}
