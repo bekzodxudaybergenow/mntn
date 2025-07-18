@@ -354,13 +354,13 @@ body {
 }
 
 .container {
-  max-width: 1760px;
+  max-width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1920px) {
   .container {
-    max-width: 1130px;
+    max-width: 1760px;
   }
 }
