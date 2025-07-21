@@ -365,3 +365,9 @@ body {
     max-width: 1760px;
   }
 }
+.header {
+  background-image: url("/images/header/bg.png");
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
