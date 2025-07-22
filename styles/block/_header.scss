@@ -3,16 +3,68 @@
     background-position: top center;
     background-size: 100%;
     background-repeat: no-repeat;
+    padding: 4rem 0 60rem;
 }
 .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-nav--logo {
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+.header-nav--logo img {
+    display: block;
 }
 .header-nav--list {
+    display: flex;
+    column-gap: 2.5rem;
+    list-style: none;
 }
 .header-nav--item {
 }
 .header-nav--link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+    transition: color .3s ease;
+
+    &:hover {
+        color: var(--yellow)
+    }
+    &:active {
+        color: var(--yellow-active);
+    }
 }
 .header-account {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    transition: color .3s ease;
+
+    & path {
+        transition: fill .3s ease;
+    }
+    &:hover {
+        color: var(--yellow)
+    }
+    &:hover path {
+        fill: var(--yellow);
+    }
+    &:active {
+        color: var(--yellow-active);
+    }
+    &:active path {
+        fill: var(--yellow-active);
+    }
 }

@@ -372,4 +372,69 @@ body {
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
+  padding: 4rem 0 60rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav--logo {
+  transition: opacity 0.3s ease;
+}
+.header-nav--logo:hover {
+  opacity: 0.8;
+}
+.header-nav--logo:active {
+  opacity: 1;
+}
+
+.header-nav--logo img {
+  display: block;
+}
+
+.header-nav--list {
+  display: flex;
+  column-gap: 2.5rem;
+  list-style: none;
+}
+
+.header-nav--link {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+.header-nav--link:hover {
+  color: var(--yellow);
+}
+.header-nav--link:active {
+  color: var(--yellow-active);
+}
+
+.header-account {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.header-account path {
+  transition: fill 0.3s ease;
+}
+.header-account:hover {
+  color: var(--yellow);
+}
+.header-account:hover path {
+  fill: var(--yellow);
+}
+.header-account:active {
+  color: var(--yellow-active);
+}
+.header-account:active path {
+  fill: var(--yellow-active);
 }
