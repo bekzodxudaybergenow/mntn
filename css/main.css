@@ -373,7 +373,16 @@ body {
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 4rem 0 60rem;
+  padding: 4rem 0 75rem;
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 10rem;
+  width: 100%;
+  background: linear-gradient(to top, var(--bg), transparent);
 }
 
 .header-nav {
