@@ -312,7 +312,7 @@ template {
   --white: #ffffff;
   --yellow: #FBD784;
   --yellow-active: #f3c352;
-  --title-font: "Gilroy", sans-serif;
+  --title-font: "Chronicle", serif;
 }
 
 @font-face {
@@ -357,10 +357,42 @@ body {
   color: var(--white);
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 .container {
   max-width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  display: inline-block;
+  color: var(--yellow);
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-left: 5.375rem;
+  position: relative;
+}
+.subtitle::before {
+  content: "";
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--yellow);
 }
 
 @media screen and (min-width: 1920px) {
