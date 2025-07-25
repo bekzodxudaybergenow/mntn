@@ -3,14 +3,14 @@
     background-position: top center;
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 4rem 0 75rem;
+    padding: 4rem 0 42rem;
     position: relative;
 
     &::after {
         content: '';
         position: absolute;
         bottom: 0;
-        height: 10rem;
+        height: 15rem;
         width: 100%;
         background: linear-gradient(to top, var(--bg), transparent)
     }
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 12.375rem;
 }
 .header-nav--logo {
     transition: opacity .3s ease;
@@ -77,4 +78,19 @@
     &:active path {
         fill: var(--yellow-active);
     }
+}
+
+.header-content {
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.header-content--subtitle {
+}
+
+.header-content--title {
+}
+.more {
+}
+.header-content--link {
 }
