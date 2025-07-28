@@ -47,6 +47,19 @@ h1, h2, h3, h4 {
         background-color: var(--yellow);
     }
 }
+.more {
+    display: flex;
+    column-gap: 0.625rem;
+    color: var(--white);
+    text-decoration: none;
+    
+    & span {
+        display: inline-block;
+        font-weight: 700;
+        margin-top: 2px;
+        
+    }
+}
 
 @media screen and (min-width: 1920px) {
     .container {
