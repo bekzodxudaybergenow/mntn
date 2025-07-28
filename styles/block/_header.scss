@@ -1,7 +1,7 @@
 .header {
     background-image: url('/images/header/bg.png');
     background-position: top center;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 4rem 0 42rem;
     position: relative;
@@ -89,8 +89,23 @@
 }
 
 .header-content--title {
-}
-.more {
+    padding-bottom: 1.5rem;
 }
 .header-content--link {
+    &:hover {
+        color: var(--yellow);
+        transition: color .3s ease;
+    
+        & path {
+            transition: fill .3s ease;
+            fill: var(--yellow);
+        }
+    }
+    &:active {
+        color: var(--yellow-active);
+
+        & path {
+            fill: var(--yellow-active);
+        }
+    }
 }

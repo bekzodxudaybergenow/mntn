@@ -415,7 +415,7 @@ h1, h2, h3, h4 {
 .header {
   background-image: url("/images/header/bg.png");
   background-position: top center;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 4rem 0 42rem;
   position: relative;
@@ -497,4 +497,23 @@ h1, h2, h3, h4 {
 .header-content {
   max-width: 42rem;
   margin: 0 auto;
+}
+
+.header-content--title {
+  padding-bottom: 1.5rem;
+}
+
+.header-content--link:hover {
+  color: var(--yellow);
+  transition: color 0.3s ease;
+}
+.header-content--link:hover path {
+  transition: fill 0.3s ease;
+  fill: var(--yellow);
+}
+.header-content--link:active {
+  color: var(--yellow-active);
+}
+.header-content--link:active path {
+  fill: var(--yellow-active);
 }
