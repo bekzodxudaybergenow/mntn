@@ -412,6 +412,16 @@ h1, h2, h3, h4 {
     max-width: 1760px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .subtitle {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 910px) {
+  .subtitle {
+    margin-bottom: 0.475rem;
+  }
+}
 .header {
   background-image: url("/images/header/bg.png");
   background-position: top center;
