@@ -109,3 +109,32 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding-bottom: 32rem;
+    }
+    .header-content {
+        max-width: 32rem;
+    }
+    .header-content--title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .header {
+        padding: 3rem 0 22rem;
+    }
+    .header-content--title {
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 3rem 0 18rem;
+    }
+    .header-nav--list {
+        column-gap: 1.6rem;
+    }
+}
