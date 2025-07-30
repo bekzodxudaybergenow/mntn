@@ -76,3 +76,9 @@ h1, h2, h3, h4 {
         margin-bottom: 0.475rem;
     }
 }
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 14px;
+    }
+    
+}
