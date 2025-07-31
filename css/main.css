@@ -427,6 +427,11 @@ h1, h2, h3, h4 {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+}
 .header {
   background-image: url("/images/header/bg.png");
   background-position: top center;
