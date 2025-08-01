@@ -82,7 +82,18 @@
 .header-nav--menu {
     display: none;
 }
-
+.header-sidebar--list {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    // height: 80%;
+    z-index: 1;
+}
 .header-content {
     max-width: 42rem;
     margin: 0 auto;
