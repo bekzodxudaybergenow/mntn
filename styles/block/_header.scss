@@ -82,16 +82,51 @@
 .header-nav--menu {
     display: none;
 }
+.header-sidebar {
+    position: fixed;
+    top: 12px;
+    left: 5%;
+    width: 90%;
+    height: 96vh;
+    padding: 120px 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .3);
+    background-color: var(--bg);
+    z-index: 2;
+}
+.header-sidebar--closebtn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+
+    & svg  {
+        display: block;
+        width: 100% !important; 
+    }
+}
 .header-sidebar--list {
     display: flex;
     flex-direction: column;
-    background-color: var(--yellow);
+    align-items: center;
+    row-gap: 10px;
     list-style: none;
-    position: fixed;
+   
+}
+.header-sidebar--link {
+    text-decoration: none;
+    color: var(--white);
+}
+.header-sidebar--shadow {
+    position: absolute;
     top: 0;
-    left: 5%;
-    width: 90%;
-    // height: 80%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
     z-index: 1;
 }
 .header-content {
