@@ -519,53 +519,11 @@ h1, h2, h3, h4 {
 }
 
 .header-sidebar {
-  position: fixed;
-  top: 12px;
-  left: 5%;
-  width: 90%;
-  height: 96vh;
-  padding: 120px 100px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
-  background-color: var(--bg);
-  z-index: 2;
-}
-
-.header-sidebar--closebtn {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  background-color: transparent;
-  border: none;
-}
-.header-sidebar--closebtn svg {
-  display: block;
-  width: 100% !important;
-}
-
-.header-sidebar--list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
-  list-style: none;
-}
-
-.header-sidebar--link {
-  text-decoration: none;
-  color: var(--white);
+  display: none;
 }
 
 .header-sidebar--shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  display: none;
 }
 
 .header-content {
@@ -638,6 +596,63 @@ h1, h2, h3, h4 {
     border: none;
     margin-left: 0.43rem;
     background-color: transparent;
+  }
+  .header-sidebar {
+    display: block;
+    position: fixed;
+    top: 12px;
+    left: 5%;
+    width: 90%;
+    height: 96vh;
+    padding: 120px 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg);
+    transform: translateY(-110%);
+    transition: all 1.5s ease;
+    z-index: 2;
+  }
+  .header-sidebar.active {
+    transform: translateY(0);
+  }
+  .header-sidebar--closebtn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+  }
+  .header-sidebar--closebtn svg {
+    display: block;
+    width: 100% !important;
+  }
+  .header-sidebar--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    list-style: none;
+  }
+  .header-sidebar--link {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .header-sidebar--shadow {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-100%);
+    transition: all 0.8s ease;
+    z-index: 1;
+  }
+  .header-sidebar--shadow.active {
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 430px) {
