@@ -1,0 +1,25 @@
+.article {
+}
+.article-list {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.article-list__item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.article-item__content {
+    max-width: 532px;
+    padding-left: 150px;
+}
+.article-content__subtitle {
+}
+.article-content__title {
+}
+.article-content__desc {
+}
+.article-content__link {
+}
+.article-item__picture {
+    margin-left: auto;
+}

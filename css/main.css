@@ -682,3 +682,21 @@ h1, h2, h3, h4 {
     text-align: center;
   }
 }
+.article-list {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.article-list__item {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.article-item__content {
+  max-width: 532px;
+  padding-left: 150px;
+}
+
+.article-item__picture {
+  margin-left: auto;
+}
