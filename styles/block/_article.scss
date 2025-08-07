@@ -1,22 +1,28 @@
 .article {
 }
 .article-list {
-    max-width: 980px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 .article-list__item {
     display: grid;
     grid-template-columns: repeat(2, auto);
+    gap: 50px;
 }
 .article-item__content {
-    max-width: 532px;
-    padding-left: 150px;
+    margin-top: 7.20rem;
+    padding-left: 110px;
 }
 .article-content__subtitle {
 }
 .article-content__title {
+    font-size: 2.8rem;
+    margin-bottom: 1.6875rem;
 }
 .article-content__desc {
+    font-size: 1rem;
+    margin-bottom: 1.6875rem;
+    line-height: 25px;
 }
 .article-content__link {
 }
