@@ -60,6 +60,24 @@ h1, h2, h3, h4 {
         
     }
 }
+.article-more {
+    align-items: center;
+    color: var(--yellow);
+
+    & span {
+        margin: 0;
+    }
+    & svg {
+        margin-top: 4px;
+        font-size: 16px;
+    }
+    &:hover {
+        color: var(--yellow-active)
+    }
+    &:active {
+        color: var(--yellow)
+    }
+}
 
 @media screen and (min-width: 1920px) {
     .container {
