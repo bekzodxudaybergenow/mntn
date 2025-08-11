@@ -760,3 +760,21 @@ h1, h2, h3, h4 {
 .article-item__picture img {
   object-fit: cover;
 }
+
+@media screen and (max-width: 1200px) {
+  .article-list__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .article-item__content {
+    max-width: 500px;
+  }
+  .article-item__picture {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+  .article-item__picture img {
+    width: 100%;
+  }
+}
