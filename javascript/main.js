@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+    once: true
+});
 let menuBtn = document.querySelector('.header-nav--menu');
 let headerSidebar = document.querySelector('.header-sidebar');
 let sidebarClosebtn = document.querySelector('.header-sidebar--closebtn');
