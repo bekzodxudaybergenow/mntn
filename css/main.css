@@ -761,13 +761,25 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (max-width: 1200px) {
+  .article-item__content {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 960px) {
   .article-list__item {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .article-list__item:nth-child(2) .article-item__picture {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .article-list__item:nth-child(2) .article-item__content {
+    grid-column: 1/3;
+  }
   .article-item__content {
-    max-width: 500px;
+    max-width: 100%;
   }
   .article-item__picture {
     margin: 0 auto;
@@ -775,5 +787,6 @@ h1, h2, h3, h4 {
   }
   .article-item__picture img {
     width: 100%;
+    object-fit: contain;
   }
 }
