@@ -807,3 +807,26 @@ h1, h2, h3, h4 {
     padding-left: 80px;
   }
 }
+@media screen and (max-width: 520px) {
+  .article-list {
+    transform: translateY(-98px);
+  }
+  .article-item__content {
+    padding-left: 40px;
+  }
+  .article-item__content::before {
+    top: -100px;
+  }
+  .article-item__picture img {
+    height: 320px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .article-item__content {
+    padding-left: 0;
+  }
+  .article-item__picture img {
+    width: 100%;
+  }
+}
