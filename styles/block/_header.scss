@@ -39,8 +39,6 @@
     column-gap: 2.5rem;
     list-style: none;
 }
-.header-nav--item {
-}
 .header-nav--link {
     font-weight: 600;
     text-decoration: none;
@@ -92,10 +90,6 @@
     max-width: 42rem;
     margin: 0 auto;
 }
-
-.header-content--subtitle {
-}
-
 .header-content--title {
     padding-bottom: 1.5rem;
 }
@@ -213,7 +207,7 @@
     }
     .header-sidebar--shadow {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -245,8 +239,6 @@
     .header-content--title {
         font-size: 2rem;
         padding-bottom: 0.750rem;
-    }
-    .header-content--subtitle {
     }
     .header-content--link {
         justify-content: center;
