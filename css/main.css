@@ -823,10 +823,18 @@ h1, h2, h3, h4 {
   }
 }
 @media screen and (max-width: 425px) {
+  .article-list__item:last-child {
+    margin-bottom: 0;
+  }
   .article-item__content {
     padding-left: 0;
   }
   .article-item__picture img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .article-content__desc {
+    line-height: 20px;
   }
 }
