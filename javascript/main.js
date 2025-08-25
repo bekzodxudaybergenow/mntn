@@ -9,10 +9,12 @@ let sidebarShadow = document.querySelector('.header-sidebar--shadow');
 menuBtn.addEventListener('click', () => {
     headerSidebar.classList.add('active');
     sidebarShadow.classList.add('active');
+    document.body.classList.add("no-scroll");
 })
 sidebarClosebtn.addEventListener('click', () => {
     headerSidebar.classList.remove('active');
     sidebarShadow.classList.remove('active');
+    document.body.classList.remove("no-scroll");
 })
 sidebarShadow.addEventListener('click', () => {
     headerSidebar.classList.remove('active');
