@@ -10,7 +10,11 @@ body {
     font-family: 'Gilroy', sans-serif;
     background-color: var(--bg);
     color: var(--white);
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
+
 h1, h2, h3, h4 {
     margin: 0;
 }
