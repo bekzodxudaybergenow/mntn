@@ -841,3 +841,50 @@ h1, h2, h3, h4 {
     line-height: 20px;
   }
 }
+.footer {
+  margin-bottom: 7.5rem;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content__logo {
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 3/4;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list__item:first-child {
+  margin-bottom: 1.5rem;
+}
+.footer-list__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer-item__title {
+  color: var(--yellow);
+}
+
+.footer-item__link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-copyright {
+  margin-top: auto;
+}
