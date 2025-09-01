@@ -859,6 +859,10 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5rem;
 }
 
+.footer-content__desc {
+  font-weight: 700;
+}
+
 .footer-links {
   display: flex;
   justify-content: space-between;
@@ -869,11 +873,11 @@ h1, h2, h3, h4 {
   list-style: none;
 }
 
-.footer-list__item:first-child {
-  margin-bottom: 1.5rem;
-}
 .footer-list__item:not(:last-child) {
   margin-bottom: 1rem;
+}
+.footer-list__item:first-child {
+  margin-bottom: 1.5rem;
 }
 
 .footer-item__title {
@@ -883,8 +887,16 @@ h1, h2, h3, h4 {
 .footer-item__link {
   color: var(--white);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-item__link:hover {
+  color: var(--yellow);
+}
+.footer-item__link:active {
+  color: var(--yellow-active);
 }
 
 .footer-copyright {
   margin-top: auto;
+  opacity: 50%;
 }

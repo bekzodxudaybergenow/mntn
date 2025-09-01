@@ -12,6 +12,9 @@
 .footer-content__logo {
     margin-bottom: 1.5rem;
 }
+.footer-content__desc {
+    font-weight: 700;
+}
 .footer-links {
     display: flex;
     justify-content: space-between;
@@ -22,11 +25,11 @@
     list-style: none;
 }
 .footer-list__item {
-    &:first-child {
-        margin-bottom: 1.5rem;
-    }
     &:not(:last-child) {
         margin-bottom: 1rem;
+    }
+    &:first-child {
+        margin-bottom: 1.5rem;
     }
 }
 .footer-item__title {
@@ -35,7 +38,16 @@
 .footer-item__link {
     color: var(--white);
     text-decoration: none;
+    transition: color .3s ease;
+
+    &:hover {
+        color: var(--yellow);
+    }
+    &:active {
+        color: var(--yellow-active);
+    }
 }
 .footer-copyright {
     margin-top: auto;
+    opacity: 50%;
 }
