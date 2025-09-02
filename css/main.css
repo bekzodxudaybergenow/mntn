@@ -932,7 +932,7 @@ h1, h2, h3, h4 {
   .footer-row {
     grid-template-rows: auto auto;
     row-gap: 6rem;
-    max-width: 80%;
+    max-width: 90%;
   }
   .footer-content__desc {
     max-width: 300px;
@@ -940,5 +940,10 @@ h1, h2, h3, h4 {
   .footer-links {
     flex-direction: column;
     row-gap: 3rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer-row {
+    max-width: 95%;
   }
 }
